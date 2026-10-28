@@ -75,7 +75,6 @@ cache_model_names <- c(
 file_table_05 <- "table-05-n2o-loo-comparison.csv"
 file_full_reduced_comparison <- "n2o-full-reduced-model-comparison.csv"
 file_depth_wfps_table <- "table-06-n2o-depth-wfps-gams.csv"
-file_threshold_results_table <- "n2o-threshold-results.csv"
 
 file_full_wfps_curves <- "n2o-full-partial-curves-wfps.csv"
 file_full_temp_curves <- "n2o-full-partial-curves-temperature.csv"
@@ -1140,8 +1139,7 @@ print(res)
 print(trt_diff)
 print(depth_shift)
 
-write_table(res, file_threshold_results, dir_processed)
-write_table(res, file_threshold_results_table, dir_processed)
+write_table(res, file_threshold_results, dir_reporting)
 write_table(trt_diff, file_treatment_differences, dir_processed)
 write_table(depth_shift, file_depth_shifts, dir_processed)
 write_table(
