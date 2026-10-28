@@ -1,0 +1,41 @@
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.rds
+*.rda
+*.RData
+
+# Output
+*.pdf
+*.png
+*.log
+*.txt
+
+# Data
+dat/*
+*.xls*
+*.csv
+*.parquet
+*.arrow
+*.feather
+
+# Vector data
+*.cpg
+*.dbf
+*.prj
+*.qpj
+*.sbn
+*.sbx
+*.shp*
+*.shx
+*.gpkg*
+
+# Raster data
+*.tif
+*.nc
+
+# Misc
+*.zip
+*.tar*
