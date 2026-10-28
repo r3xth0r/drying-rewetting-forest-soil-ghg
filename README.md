@@ -1,7 +1,6 @@
 # Analysis of Greenhouse Gas Dynamics in Austrian Forest Soils Under Drying-Rewetting Cycles
 
 This repository supplements the manuscript by
-
 Dylan Goff <sup>[![](https://info.orcid.org/wp-content/uploads/2020/12/orcid_16x16.gif)](https://orcid.org/0009-0009-2821-1620)</sup>,
 Thomas Dirnböck <sup>[![](https://info.orcid.org/wp-content/uploads/2020/12/orcid_16x16.gif)](https://orcid.org/0000-0002-8294-0690)</sup>,
 Ika Djukic <sup>[![](https://info.orcid.org/wp-content/uploads/2020/12/orcid_16x16.gif)](https://orcid.org/0000-0002-5144-9321)</sup>,
