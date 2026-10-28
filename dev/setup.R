@@ -20,7 +20,7 @@ for (d in c("dat/interim", "dat/processed", "dat/reporting", "plt")) {
 if (!requireNamespace("cmdstanr", quietly = TRUE)) {
   install.packages(
     "cmdstanr",
-    repos = c("https://mc-stan.org/r-packages/", getOption("repos"))
+    repos = c("https://stan-dev.r-universe.dev", "https://cloud.r-project.org")
   )
 }
 
