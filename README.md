@@ -48,3 +48,6 @@ make all
 ```
 
 `make all` clears existing generated files in `plt/`, `dat/interim/`, `dat/processed/`, and `dat/reporting/` (preserving `.gitkeep` files), then regenerates the figures, tables, and session information. Use `make figures` or `make tables` to run only that group without first cleaning outputs. Individual targets are listed in [dev/README.md](dev/README.md).
+
+> [!NOTE]
+> Running the whole pipeline takes some time, up to 30 minutes depending on the configuration.
