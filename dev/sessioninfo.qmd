@@ -1,0 +1,79 @@
+---
+title: "Analysis of Greenhouse Gas Dynamics in Austrian Forest Soils Under Drying-Rewetting Cycles"
+author:
+  - name: Dylan Goff
+    orcid: 0009-0009-2821-1620
+    email: dylan.goff@boku.ac.at
+    affiliations:
+      - name: BOKU University
+        department: Department of Ecosystem Management, Climate and Biodiversity
+        address: Gregor-Mendel-Straße 33
+        city: Vienna
+        country: Austria
+        url: https://boku.ac.at/en/
+  - name: Matthias Schlögl
+    orcid: 0000-0002-4357-523X
+    email: matthias.schloegl@boku.ac.at
+    affiliations:
+      - name: BOKU University
+        department: Department of Landscape, Water and Infrastructure
+        address: Peter-Jordan-Straße 82
+        city: Vienna
+        country: Austria
+        url: https://boku.ac.at/en/
+      - name: GeoSphere Austria
+        department: Climate Impact Research
+        address: Hohe Warte 38
+        city: Vienna
+        country: Austria
+        url: https://geosphere.at/en
+format:
+  html:
+    toc: false
+    embed-resources: true
+theme:
+  light: flatly
+  dark: darkly
+---
+
+# Session Information
+
+This repository supplements the manuscript by
+
+Dylan Goff, Thomas Dirnböck, Ika Djukic, Markus Gorfer, Barbara Kitzler, Johannes Kobler, Matthias Schlögl & Eugenio Diaz-Pinés (2026):
+**Drying-Rewetting cycles reduce soil CO<sub>2</sub> and N<sub>2</sub>O emissions while increasing CH<sub>4</sub> uptake in two Austrian broadleaved forests**.
+
+```{r}
+#| include: false
+library("here")
+source(here::here("dev", "logging.R"))
+log_script_start("sessioninfo")
+
+lockfile <- renv::lockfile_read(here::here("renv.lock"))
+package_names <- names(lockfile$Packages)
+
+if (!length(package_names)) {
+  stop("No packages found in renv.lock.")
+}
+
+session <- sessioninfo::session_info(
+  pkgs = package_names,
+  include_base = TRUE
+)
+```
+
+## Environment
+
+```{r}
+#| echo: false
+session
+```
+
+```{r}
+#| include: false
+logger::log_info(paste(
+  "Rendering session information to:",
+  here::here("dat", "reporting", "session-info.html")
+))
+log_script_end("sessioninfo")
+```
