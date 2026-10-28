@@ -27,3 +27,20 @@ dat
 ├── processed   # data files of modelling results
 └── reporting   # final results used for reporting in the paper
 ```
+
+## Reproduce the analysis
+
+From the repository root, with R, `make`, Quarto, and a C++ toolchain available, restore the R packages and set up CmdStan:
+
+```sh
+Rscript -e 'renv::restore()'
+Rscript -e 'source("dev/setup.R")'
+```
+
+Then run the full analysis:
+
+```sh
+make all
+```
+
+`make all` clears existing generated files in `plt/`, `dat/interim/`, `dat/processed/`, and `dat/reporting/` (preserving `.gitkeep` files), then regenerates the figures, tables, and session information. Use `make figures` or `make tables` to run only that group without first cleaning outputs. Individual targets are listed in [dev/README.md](dev/README.md).
