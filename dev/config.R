@@ -12,6 +12,8 @@ dir_plots <- here::here("plt")
 
 # General ====
 
+Sys.setlocale(category = "LC_TIME", locale = "en_GB.UTF-8")
+
 data_timezone <- "Europe/Vienna"
 
 options(
