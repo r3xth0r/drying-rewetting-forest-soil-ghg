@@ -13,3 +13,17 @@ Eugenio Diaz-Pinés <sup>[![](https://info.orcid.org/wp-content/uploads/2020/12/
 (2026):
 **Drying-Rewetting cycles reduce soil CO<sub>2</sub> and N<sub>2</sub>O emissions while increasing CH<sub>4</sub> uptake in two Austrian broadleaved forests**.
 <!-- *Journal*, Issue, Pages. [doi:](https://doi.org/). -->
+
+## Repo structure
+
+The repository follows a very simple cookicutter structure for data science project. The top-level directories `dat`, `dev` and `plt` contain data, code and plots, respectively.
+
+The data directory is further subdivided into:
+
+```sh
+dat
+├── raw         # the raw, immutable data dump
+├── interim     # temporary and interim data files
+├── processed   # data files of modelling results
+└── reporting   # final results used for reporting in the paper
+```
